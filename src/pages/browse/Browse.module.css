@@ -1,0 +1,9 @@
+.movies > h3 {
+  color: white;
+  margin: 64px 0px 8px 12px;
+  font-size: 20px;
+}
+
+.movies {
+  margin-bottom: 64px;
+}

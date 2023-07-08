@@ -1,0 +1,49 @@
+.banner {
+  color: white;
+  height: 310px;
+  margin-bottom: 48px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.banner img {
+  width: 100%;
+  object-fit: cover;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.banner h3 {
+  font-size: 40px;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.buttons button {
+  display: block;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.34);
+  color: white;
+  padding: 8px 24px;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+}
+
+.banner-text {
+  margin-top: 80px;
+  width: 40%;
+}
+
+.description {
+  font-weight: bold;
+}

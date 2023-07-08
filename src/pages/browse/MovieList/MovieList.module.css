@@ -1,0 +1,62 @@
+.movie-list {
+  display: flex;
+  gap: 12px;
+  overflow: scroll;
+  padding: 16px;
+  padding-right: 32px;
+  margin-left: 16px;
+  width: 100%;
+}
+
+.movie-list img {
+  width: 200px;
+  animation: minify 0.3s linear;
+  transform: scale(1, 1);
+}
+
+.movie-list-original {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 80px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.movie-list-original img {
+  width: 9%;
+
+  animation: minify 0.3s linear;
+  transform: scale(1, 1);
+}
+
+/* makes animation on img has duration of 0s when page loads = prevent anim from running when page loads */
+.no-anim {
+  animation-duration: 0s !important;
+}
+
+.movie-list img:hover,
+.movie-list-original img:hover {
+  animation: magnify 0.3s linear;
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+
+@keyframes magnify {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    transform: scale(1.1, 1.1);
+  }
+}
+
+@keyframes minify {
+  0% {
+    transform: scale(1.1, 1.1);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}

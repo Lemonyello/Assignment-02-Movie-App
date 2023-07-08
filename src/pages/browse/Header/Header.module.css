@@ -1,0 +1,57 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+}
+
+.logo {
+  background: -webkit-linear-gradient(rgb(241, 12, 92), rgb(196, 34, 34));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.search-icon {
+  height: 20px;
+  margin-top: 8px;
+}
+
+.fade-in {
+  animation: fade-in-bg 0.3s linear;
+  background-color: rgba(0, 0, 0, 0.999);
+}
+
+.fade-out {
+  animation: fade-out-bg 0.3s linear;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@keyframes fade-in-bg {
+  0% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.999);
+  }
+}
+
+@keyframes fade-out-bg {
+  0% {
+    background-color: rgba(0, 0, 0, 0.999);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
